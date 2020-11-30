@@ -1,6 +1,7 @@
 # i2k-2020-s3-ngff-zarr-workshop
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
+[![Cloud on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
+[![Conversion on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=cloud.ipynb)
 
 ## Set-up
 
