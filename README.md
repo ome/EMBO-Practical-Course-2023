@@ -11,9 +11,15 @@ Install Anaconda https://www.anaconda.com/products/individual#Downloads
 Then, to create the environment:
 
     $ cd i2k-2020-s3-ngff-workshop
-    $ conda env create -f binder/environment.yml
-    $ conda activate i2k
+    $ conda env create -n ngff -f binder/environment.yml
+    $ conda activate ngff
 
 Run a Notebook:
 
     $ jupyter notebook conversion.ipynb
+
+Alternatively, build in Docker:
+
+    $ docker build -t i2k-image i2k-2020-s3-ngff-workshop
+    $ docker run -ti --rm i2k-image
+    (i2k) i2k@3bf3a0731b8b:/work$ mc ls play/i2k2020
