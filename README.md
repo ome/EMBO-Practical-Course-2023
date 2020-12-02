@@ -1,10 +1,10 @@
 # i2k-2020-s3-ngff-zarr-workshop
 
-[![Cloud on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
-[![Conversion on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=cloud.ipynb)
+This repository contains notebooks for practicals during
+the NGFF workshop from the [I2K 2020 conference](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends).
 
-This repository houses the NGFF workshop from the
-[I2K 2020 conference](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends).
+ * Notebook 1: Cloud basics - [![Conversion on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=cloud.ipynb)
+ * Notebook 2: Conversion basics - [![Cloud on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
 
 ## Set-up
 
@@ -27,4 +27,4 @@ Alternatively, build in Docker:
 
     $ docker build -t i2k-image i2k-2020-s3-ngff-workshop
     $ docker run -ti --rm -p 8888:8888 i2k-image
-    (i2k) i2k@3bf3a0731b8b:/work$ jupyter notebook conversion.ipynb
+    (i2k) i2k@3bf3a0731b8b:/work$ mc ls play/i2k2020
