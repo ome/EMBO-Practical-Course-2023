@@ -1,7 +1,7 @@
-# i2k-2020-s3-ngff-zarr-workshop
+# NGFF GBI 2021 Workshop
 
 This repository contains notebooks for practicals during
-the NGFF workshop from the [I2K 2020 conference](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends).
+the NGFF workshop from the [GBI Image Data Workshop](https://www.globalbioimaging.org/international-training-courses-for-core-facility-staff/image-data-course).
 
  * Notebook 1: Cloud basics - [![Conversion on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=cloud.ipynb)
  * Notebook 2: Conversion basics - [![Cloud on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
