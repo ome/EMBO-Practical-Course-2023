@@ -1,30 +1,45 @@
 # NGFF GBI 2021 Workshop
 
-This repository contains notebooks for practicals during
-the NGFF workshop from the [GBI Image Data Workshop](https://www.globalbioimaging.org/international-training-courses-for-core-facility-staff/image-data-course).
+This repository contains a notebook for the practicals during Day 3 of the [GBI
+Image Data Workshop](https://www.globalbioimaging.org/international-training-courses-for-core-facility-staff/image-data-course).
 
- * Notebook 1: Cloud basics - [![Conversion on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=cloud.ipynb)
- * Notebook 2: Conversion basics - [![Cloud on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/i2k-2020-s3-ngff-workshop/HEAD?filepath=conversion.ipynb)
+## Running on MyBinder.org
 
-## Set-up
+You can launch workshop.ipynb by clicking on [![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/
+NGFF-GBI-2021-Workshop/HEAD?filepath=workshop.ipynb)
 
-To run the Jupyter Notebooks:
+## Running in Docker
+
+Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
+tool to run this repository as a local Docker instance:
+
+    $ git clone git://github.com/joshmoore/NGFF-GBI-2021-Workshop
+    $ cd NGFF-GBI-2021-Workshop
+    $ repo2docker .
+
+Then follow the instructions that are printed after the Docker image is built.
+
+## Running locally
+
+Or finally, if you would like to install the necessary requirements locally,
+we suggest using conda:
 
 Install Anaconda https://www.anaconda.com/products/individual#Downloads
 
 Then, to create the environment:
 
-    $ git clone git://github.com/joshmoore/i2k-2020-s3-ngff-workshop
-    $ cd i2k-2020-s3-ngff-workshop
+    $ git clone git://github.com/joshmoore/NGFF-GBI-2021-Workshop
+    $ cd NGFF-GBI-2021-Workshop
     $ conda env create -n ngff -f binder/environment.yml
+
+and run a Notebook:
+
     $ conda activate ngff
+    $ jupyter notebook workshop.ipynb
 
-Run a Notebook:
+An additional benefit of installing the requirements locally is that you
+can then use the tools like `bioformats2raw` without needing to launch
+Jupyter itself:
 
-    $ jupyter notebook conversion.ipynb
-
-Alternatively, build in Docker:
-
-    $ docker build -t i2k-image i2k-2020-s3-ngff-workshop
-    $ docker run -ti --rm -p 8888:8888 i2k-image
-    (i2k) i2k@3bf3a0731b8b:/work$ mc ls play/i2k2020
+    $ conda activate ngff
+    $ bioformats2raw my.tiff . --file_type=zarr --dimension-order=XYZCT
