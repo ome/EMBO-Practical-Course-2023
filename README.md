@@ -5,8 +5,8 @@ Image Data Workshop](https://www.globalbioimaging.org/international-training-cou
 
 ## Running on MyBinder.org
 
-You can launch workshop.ipynb by clicking on [![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/
-NGFF-GBI-2021-Workshop/HEAD?filepath=workshop.ipynb)
+You can launch workshop.ipynb by clicking on
+[![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/NGFF-GBI-2021-Workshop/HEAD?filepath=workshop.ipynb)
 
 ## Running in Docker
 
@@ -35,6 +35,7 @@ Then, to create the environment:
 and run a Notebook:
 
     $ conda activate ngff
+    $ pip install jupyter
     $ jupyter notebook workshop.ipynb
 
 An additional benefit of installing the requirements locally is that you
