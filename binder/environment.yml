@@ -15,9 +15,11 @@ dependencies:
   - xarray
   - zarr >= 2.4.0
   - bioformats2raw
+  - omero-py
   - go-mc
   - pip
   - pip:
       - PyQT5==5.13.1
       - ome-zarr
       - awscli
+      - omero-cli-zarr
