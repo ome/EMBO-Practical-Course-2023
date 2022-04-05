@@ -5,6 +5,8 @@ channels:
   - defaults
 dependencies:
   - python ~= 3.9.0
+  - notebook
+  - nb_conda_kernels
   - napari
   - ipython
   - wheel
@@ -15,6 +17,7 @@ dependencies:
   - xarray
   - zarr >= 2.4.0
   - bioformats2raw
+  - raw2ometiff
   - omero-py
   - go-mc
   - pip
