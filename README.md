@@ -1,7 +1,7 @@
 # NGFF GBI 2022 Workshop
 
-This repository contains a notebook for the practicals during Day 3 of the [GBI
-Image Data Workshop](https://www.globalbioimaging.org/international-training-courses-for-core-facility-staff/image-data-course).
+This repository contains a notebook for practicals during the
+[GBI OME-NGFF workshop](https://globalbioimaging.org/international-training-courses/ome-ngff-workshop-2022).
 
 ## Running on MyBinder.org
 
