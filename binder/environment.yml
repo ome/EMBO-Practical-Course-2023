@@ -4,7 +4,7 @@ channels:
   - joshmoore
   - defaults
 dependencies:
-  - python == 3.9.0
+  - python ~= 3.9.0
   - napari
   - ipython
   - wheel
@@ -19,7 +19,8 @@ dependencies:
   - go-mc
   - pip
   - pip:
-      - PyQT5==5.13.1
+      - PyQT5~=5.13.1
       - ome-zarr
       - awscli
       - omero-cli-zarr
+      - napari-ome-zarr
