@@ -1,0 +1,41 @@
+{
+  "multiscales": [
+    {
+      "axes": [
+        {
+          "name": "z",
+          "type": "space",
+          "unit": "millimeter"
+        },
+        {
+          "name": "y",
+          "type": "space",
+          "unit": "millimeter"
+        },
+        {
+          "name": "x",
+          "type": "space",
+          "unit": "millimeter"
+        }
+      ],
+      "datasets": [
+        {
+          "path": "s0",
+          "coordinateTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                7.0,
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "mri",
+      "type": "Average",
+      "version": "0.4"
+    }
+  ]
+}
