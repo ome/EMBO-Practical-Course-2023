@@ -8,14 +8,17 @@ dependencies:
   - notebook
   - nb_conda_kernels
   - napari
+  - napari-aicsimageio
   - ipython
   - wheel
   - requests
+  - h5utils
   - s3fs
   - scikit-image
   - scipy
   - xarray
   - zarr >= 2.4.0
+  - bftools
   - bioformats2raw
   - raw2ometiff
   - omero-py
