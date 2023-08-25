@@ -9,6 +9,7 @@ dependencies:
   - nb_conda_kernels
   - napari
   - napari-aicsimageio
+  - bioformats_jar
   - ipython
   - wheel
   - requests
@@ -23,6 +24,7 @@ dependencies:
   - raw2ometiff
   - omero-py
   - go-mc
+  - pv
   - pip
   - pip:
       - PyQT5~=5.13.1
@@ -30,3 +32,4 @@ dependencies:
       - awscli
       - omero-cli-zarr
       - napari-ome-zarr
+      - xmlschema
