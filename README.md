@@ -6,14 +6,14 @@ This repository contains a notebook for practicals during
 ## Running on MyBinder.org
 
 You can launch workshop.ipynb by clicking on
-[![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshmoore/EMBO-Practical-Course-2023/HEAD?filepath=workshop.ipynb)
+[![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/EMBO-Practical-Course-2023/HEAD?filepath=3_POSIX_Bash.ipynb)
 
 ## Running in Docker
 
 Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
 tool to run this repository as a local Docker instance:
 
-    $ git clone git://github.com/joshmoore/EMBO-Practical-Course-2023
+    $ git clone git://github.com/ome/EMBO-Practical-Course-2023
     $ cd EMBO-Practical-Course-2023
     $ repo2docker .
 
@@ -28,7 +28,7 @@ Install Anaconda https://www.anaconda.com/products/individual#Downloads
 
 Then, to create the environment:
 
-    $ git clone git://github.com/joshmoore/EMBO-Practical-Course-2023
+    $ git clone git://github.com/ome/EMBO-Practical-Course-2023
     $ cd EMBO-Practical-Course-2023
     $ conda env create -n embo -f binder/environment.yml
 
