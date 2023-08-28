@@ -33,3 +33,4 @@ dependencies:
       - omero-cli-zarr
       - napari-ome-zarr
       - xmlschema
+      - bash_kernel
