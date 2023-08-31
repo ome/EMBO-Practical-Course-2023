@@ -13,38 +13,44 @@ $ pwd
 /scratch/bioimagecourse2023/session1
 
 $ ls -l
-drwxr-xr-x 4 josh_openmicroscopy users     4096 Aug 21 11:48 conda
-drwxr-xr-x 3 josh_openmicroscopy users     4096 Aug 22 14:56 data
-drwxr-xr-x 8 josh_openmicroscopy users     4096 Aug 21 11:46 EMBO-Practical-Course-2023
--rwxr-xr-x 1 josh_openmicroscopy users 26406912 Aug 21 12:16 mc
--rwxr-xr-x 1 josh_openmicroscopy users 13516992 Aug 21 11:45 micromamba
--rw-r----- 1 josh_openmicroscopy users 23433941 Aug 29 10:44 OMEZarrReader-0.3.1-jar-with-dependencies.jar
--rw-r--r-- 1 josh_openmicroscopy users      242 Aug 29 10:47 setup.sh
+
+total 146350
+drwxr-xr-x  9 josh_openmicroscopy users     4096 Aug 29 15:30 EMBO-Practical-Course-2023
+-rw-r--r--  1 josh_openmicroscopy users 86485611 Aug 20 18:47 Mambaforge-Linux-x86_64.sh
+-rw-r-----  1 josh_openmicroscopy users 23433941 Aug 29 10:44 OMEZarrReader-0.3.1-jar-with-dependencies.jar
+drwxr-xr-x  4 josh_openmicroscopy users     4096 Aug 21 11:48 conda
+drwxr-xr-x  3 josh_openmicroscopy users     4096 Aug 31 09:16 data
+drwxr-xr-x 19 josh_openmicroscopy users     4096 Aug 29 14:53 mambaforge
+-rwxr-xr-x  1 josh_openmicroscopy users 26406912 Aug 21 12:16 mc
+-rw-r--r--  1 josh_openmicroscopy users       78 Aug 29 11:13 notebook.sh
+-rw-r--r--  1 josh_openmicroscopy users      242 Aug 29 10:47 setup.sh
 ```
 
 ## Running locally
 
 If you would like to install the necessary requirements locally,
-we suggest using conda or micromamba, e.g.:
+we suggest using conda or omamba, e.g.:
 
-https://mamba.readthedocs.io/en/latest/micromamba-installation.html
+https://mamba.readthedocs.io/en/latest/mamba-installation.html#mamba-install
+
+(At the time of the workshop, micromamba did *not* work with Jupyter.)
 
 Then, to create the environment:
 
     $ git clone git://github.com/ome/EMBO-Practical-Course-2023
     $ cd EMBO-Practical-Course-2023
-    $ micromamba create -n embo -f binder/environment.yml
+    $ omamba create -n embo -f binder/environment.yml
 
 Installing the requirements locally means that you
 can then use the tools like `bioformats2raw` without needing to launch
 Jupyter itself:
 
-    $ micromamba activate embo
+    $ omamba activate embo
     $ bioformats2raw my.tiff output
 
 But if you would like, you can run the Notebook server yourself:
 
-    $ micromamba activate embo
+    $ mamba activate embo
     $ jupyter notebook 3_POSIX_Bash.ipynb
 
 ## Running in Docker
